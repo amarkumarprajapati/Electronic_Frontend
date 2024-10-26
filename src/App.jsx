@@ -6,7 +6,7 @@ import TopProducts from "./components/Products/TopProducts";
 import Banner from "./components/Banner/Banner";
 
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 import { useEffect } from "react";
 import Suscribe from "./components/Banner/Suscribe";
@@ -17,27 +17,26 @@ function App() {
   useEffect(() => {
     AOS.init({
       offset: 100,
-      duration:800,
+      duration: 800,
       easing: "ease-in-out",
-      delay: 100
+      delay: 100,
     });
     AOS.refresh();
-  },[])
+  }, []);
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Products/>
-      <TopProducts/>
-      <Banner/>
-      <Suscribe/>
-      <Products2/>
-      <Testimonials/>
-      <Footer/>
+      <Navbar />
+      <Hero />
+      <Products />
+      <TopProducts />
+      <Banner />
+      <Suscribe />
+      <Products2 />
+      <Testimonials />
+      <Footer />
     </>
-  )
-
+  );
 }
 
-export default App
+export default App;

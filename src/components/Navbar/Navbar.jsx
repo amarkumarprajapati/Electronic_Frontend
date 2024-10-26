@@ -14,7 +14,7 @@ const Navbar = () => {
             <div>
               <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-3">
                 <img src={Logo} alt="Logo" className="w-10" />
-                Shopsy
+                Electronic
               </a>
             </div>
             {/* Search bar */}
@@ -23,7 +23,7 @@ const Navbar = () => {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="w-[200px] sm:w-[200px] group-hover:w-[300px] text-black transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary"
+                  className="w-[300px] sm:w-[300px]  text-black transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary"
                 />
                 <IoMdSearch className="text-grey-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
               </div>
