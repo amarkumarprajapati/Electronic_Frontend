@@ -1,17 +1,9 @@
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import Products from "./components/Products/Products";
-import Products2 from "./components/Products/Products2";
-import TopProducts from "./components/Products/TopProducts";
-import Banner from "./components/Banner/Banner";
-
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-import { useEffect } from "react";
-import Suscribe from "./components/Banner/Suscribe";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Footer from "./components/Footer/Footer";
+import { Provider } from "react-redux";
+import { store } from "./Redux/store";
+import AppRouter from "./Router/Router";
 
 function App() {
   useEffect(() => {
@@ -25,17 +17,9 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Products />
-      <TopProducts />
-      <Banner />
-      <Suscribe />
-      <Products2 />
-      <Testimonials />
-      <Footer />
-    </>
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
   );
 }
 
