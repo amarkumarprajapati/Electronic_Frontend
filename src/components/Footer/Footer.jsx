@@ -47,7 +47,8 @@ const Footer = () => {
                   {FooterLinks.map((link) => (
                     <li
                       className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
-                      key={link.title}>
+                      key={link.title}
+                    >
                       <span>{link.title}</span>
                     </li>
                   ))}
@@ -63,7 +64,8 @@ const Footer = () => {
                   {FooterLinks.map((link) => (
                     <li
                       className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
-                      key={link.title}>
+                      key={link.title}
+                    >
                       <span>{link.title}</span>
                     </li>
                   ))}
